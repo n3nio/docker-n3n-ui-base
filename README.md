@@ -2,11 +2,11 @@
 
 Base image for WIZEYE UI.
 
-## README
+## INSTRUCTIONS
 
 $ docker pull wizeye/n3n-ui-base
 
-## Manual build
+## MANUAL BUILD
 
 build -t wizeye/base_image .
 
