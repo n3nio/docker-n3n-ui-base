@@ -8,7 +8,7 @@ RUN yum -y update; yum clean all
 RUN yum -y install wget net-tools yum-utils; yum clean all
 
 # Install nodejs
-RUN curl -sL https://rpm.nodesource.com/setup | bash -
+RUN curl --silent --location https://rpm.nodesource.com/setup_4.x | bash -
 RUN yum -y install nodejs; yum clean all
 
 # Install mono
