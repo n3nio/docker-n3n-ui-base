@@ -16,5 +16,7 @@ RUN rpm --import "http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3FA7E03
 RUN yum-config-manager --add-repo http://download.mono-project.com/repo/centos/
 RUN yum -y install mono-complete; yum clean all
 
+RUN ln -s /usr/lib64/libMonoPosixHelper.so /usr/lib/libMonoPosixHelper.so
+
 
 CMD ["/bin/bash"]
